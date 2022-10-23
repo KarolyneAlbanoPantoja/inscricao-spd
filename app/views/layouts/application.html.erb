@@ -10,6 +10,18 @@
   </head>
 
   <body>
+    <nav id = "menu">
+      <ul>
+        <li>
+          <%= link_to "Principal", root_path %>
+          <a href = "#">Sobre</a>
+          <%= link_to "Seja Aluno", new_subscript_path %>
+          <a href = "#">Alunos</a>
+          <a href = "#">Preço</a>
+          <a href = "#">Contato</a>
+        </li>
+      </ul>
+    </nav>
     <div id = 'content'>
       <%= yield %>
     </div>
@@ -24,7 +36,7 @@
           
         });
       }
-      const titulo = document.querySelector(#h2);
+      const titulo = document.querySelector('#h2');
       typeWrite(titulo);
     </script>
        <%= yield %>
